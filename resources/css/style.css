@@ -1,0 +1,157 @@
+body
+{
+    padding: 0;
+    margin: 0;
+}
+.logo img
+{
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+header
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.menu
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-shadow: black 3px 3px 3px;
+    height: 40px;
+    padding-right: 400px;
+    align-items: center;
+}
+.menu a
+{
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(255, 200, 0);
+}
+.hka
+{
+    margin-top: 30px;
+    display: flex;flex-wrap: wrap;
+    justify-content: center;
+    font-size: 30px;
+    border-bottom: solid grey 2px;
+}
+.hka h2
+{
+    padding: 0;
+    margin: 0;
+}
+.info
+{
+    display: flex;flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 25px;
+}
+.card img
+{
+    width: 300px;
+}
+.card
+{
+    display: flex;flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+.item
+{
+    display: flex;flex-wrap: wrap;
+    justify-content: space-around;
+    transition: all 2s;
+}
+.item.active
+{
+    display: flex;
+    justify-content: space-around;
+    left: unset;
+    right: unset;
+    transition: all 2s;flex-wrap: wrap;
+}
+.carousel
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.btn_prev, .btn_next
+{
+    font-size: 50px;
+    position: absolute;
+    z-index: 9999;
+}
+.btn_next
+{
+    right: 0;
+}
+.map
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+footer a:hover
+{
+    color:rgb(156, 124, 7);
+}
+a:hover
+{
+    color:rgb(252, 220, 104)
+}
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+    border-top: 4px solid black;
+    box-shadow: -71px -3px 55px 2px black;
+}
+    footer .menu
+    {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 0;
+        height: unset;
+        margin: 0;
+        background: unset;
+    }
+    footer.logo
+    {
+     width: 300px;
+    }
+
+@media(width < 800px)
+{
+    .menu
+    {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 0;
+        height: unset;
+    }
+    .logo img
+    {
+        width: 200px;
+    }
+    .logo_info img
+    {
+        width: 300px;
+    }
+}
