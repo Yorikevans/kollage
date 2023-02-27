@@ -155,3 +155,64 @@ footer
         width: 300px;
     }
 }
+.slider
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.slider .prev,
+.slider .next
+{
+    font-size: 40px;
+    background: rgba(15, 153, 15, 0.43);
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.slider .items
+{
+    z-index: 99999;
+}
+.slider .tavars_cards
+{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+}
+.slider .tavars_cards img
+{
+    width: 300px;
+    height: 300px;
+}
+.slider .tavars_cards .card
+{
+    position: absolute;
+    opacity: 0;
+    transition: all 0.8s;
+}
+.slider .tavars_cards .card .btn_buy
+{
+    background: rgba(0, 0, 255, 0.253);
+    border-bottom-right-radius: 50px;
+    width: 100px;
+    display: flex;
+    transition: all 0.5s;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    cursor: pointer;
+    z-index: 999;
+}
+.slider .tavars_cards .card .btn_buy:hover
+{
+    background: rgba(0, 255, 51, 0.253);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: unset;
+    transition: all 0.5s;
+
+}

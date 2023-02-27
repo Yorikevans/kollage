@@ -36,8 +36,21 @@
         </div>
     </div>
     </div>
-
-
+    <div class="hka"><h2>Новинки компании</h2></div>
+    <div class="slider">
+        <div class="items"><div class="prev"><</div></div>
+        <div class="tavars_cards">
+            @foreach($prod as $obprod)
+            <div class="card">
+                <div class="img"><img src="{{ $obprod->image}}" alt="error"></div>
+                <div class="title">{{ $obprod->name_tovar}}</div>
+                <div class="price">Цена: {{ $obprod->price}}</div>
+                <div class="btn_buy">Купить</div>
+            </div>
+            @endforeach
+        </div>
+        <div class="items"><div class="next">></div></div>
+    </div>
 
     <footer>
         <div class="logo"><img src="images/13hq.jpg" alt="error"></div>

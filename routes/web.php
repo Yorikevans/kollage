@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {return view('index');});
+// Route::get('/', function () {return view('index');});
 Route::get('/katalog', function () {return view('katalog');});
 Route::get('/map', function () {return view('map');});
 
@@ -21,3 +21,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/', [App\Http\Controllers\product::class, 'product']);

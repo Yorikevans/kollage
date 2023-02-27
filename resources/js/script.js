@@ -1,11 +1,35 @@
-document.querySelector("#info_btn").addEventListener('click', ()=>{
-    document.querySelector(".info_h").style = "color: Yellow";
-    document.querySelector(".info").style = "color: Yellow"
+let card = document.querySelectorAll(".card");
+
+let prev = document.querySelector(".prev");
+let next = document.querySelector(".next");
+
+let number_card = card.length-1;
+card[number_card].style = "opacity: 1";
+prev.addEventListener('click', ()=>{
+    if (number_card > 0)
+    {
+        card[number_card].style = "opacity: 0; transition: all 0.8s; ";
+        number_card -= 1;
+        card[number_card].style = "opacity: 1; transition: all 0.8s;";
+    }
+    else
+    {
+        card[number_card].style = "opacity: 0; transition: all 0.8s; ";
+        number_card = card.length-1;
+        card[number_card].style = "opacity: 1; transition: all 0.8s; ";
+    }
 });
-
-
-let item = document.querySelectorAll(".item");
-let active = 0;
-document.querySelector(".btn_prev").addEventListener('click', ()=>{
-        item[active].style = "opacity: 0;"
+next.addEventListener('click', ()=>{
+    if (number_card == card.length-1)
+    {
+        card[number_card].style = "opacity: 0; transition: all 0.8s;";
+        number_card = 0;
+        card[number_card].style = "opacity: 1; transition: all 0.8s;";
+    }
+    else
+    {
+        card[number_card].style = "opacity: 0; transition: all 0.8s;";
+        number_card += 1;
+        card[number_card].style = "opacity: 1; transition: all 0.8s;";
+    }
 });
