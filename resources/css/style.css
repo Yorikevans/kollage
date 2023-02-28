@@ -216,3 +216,13 @@ footer
     transition: all 0.5s;
 
 }
+.katalog .item
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.katalog .item .card
+{
+    margin-bottom: 50px;
+}

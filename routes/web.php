@@ -22,3 +22,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/', [App\Http\Controllers\product::class, 'product']);
+Route::get('/katalog', [App\Http\Controllers\product::class, 'product']);
