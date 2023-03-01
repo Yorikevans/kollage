@@ -11,4 +11,9 @@ class product extends Controller
         $prod = \App\Models\product::orderby($name, $sort)->get();
         return view('index', ['prod'=>$prod]);
     }
+    public function katal($name='id', $sort = 'desc')
+    {
+        $prod = \App\Models\product::orderby($name, $sort)->get();
+        return view('katalog', ['prod'=>$prod]);
+    }
 }
