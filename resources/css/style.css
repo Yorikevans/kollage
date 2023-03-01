@@ -219,6 +219,7 @@ footer
 .katalog .item
 {
     display: flex;
+<<<<<<< HEAD
     align-items: center;
     justify-content: space-around;
 }
@@ -226,4 +227,12 @@ footer
 {
     width: 300px;
     height: 300px;
+=======
+    justify-content: space-around;
+    align-items: center;
+}
+.katalog .item .card
+{
+    margin-bottom: 50px;
+>>>>>>> f223dc7d7c5ec76e391948dc2958db5ce57ff0af
 }

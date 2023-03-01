@@ -22,4 +22,8 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/', [App\Http\Controllers\product::class, 'product']);
+<<<<<<< HEAD
 Route::get('/katalog', [App\Http\Controllers\product::class, 'katal']);
+=======
+Route::get('/katalog', [App\Http\Controllers\product::class, 'product']);
+>>>>>>> f223dc7d7c5ec76e391948dc2958db5ce57ff0af
