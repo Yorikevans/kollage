@@ -26,7 +26,6 @@
     <div class="katalog">
         <div class="item">
             @foreach($prod as $obprod)
-<<<<<<< HEAD
             <div class="card">
                 <div class="img"><img src="{{ $obprod->image}}" alt="error"></div>
                 <div class="title">{{ $obprod->name_tovar}}</div>
@@ -37,14 +36,6 @@
                 <div class="btn_buy">Купить</div>
                 @endif
             </div>
-=======
-                <div class="card">
-                    <div class="img"><img src="{{ $obprod->image}}" alt="error"></div>
-                    <div class="title">{{ $obprod->name_tovar}}</div>
-                    <div class="price">Цена: {{ $obprod->price}}</div>
-                    <div class="btn_buy">Купить</div>
-                </div>
->>>>>>> f223dc7d7c5ec76e391948dc2958db5ce57ff0af
             @endforeach
         </div>
     </div>
