@@ -12,7 +12,7 @@
                 @guest
                 <a href="home">Авторизируйтесь</a>
                 @else
-                <div class="btn_buy"><a href="info_tov {{ $obprod -> id }}">Купить</a></div>
+                <div class="btn_buy"><a href="info_tov{{ $obprod -> id }}">Купить</a></div>
                 @endif
             </div>
             @endforeach

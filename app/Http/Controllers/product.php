@@ -8,7 +8,7 @@ class product extends Controller
 {
     public function product($name='id', $sort = 'desc')
     {
-        $prod = \App\Models\product::orderby($name, $sort)->get();
+        $prod = \App\Models\product::orderby($name, $sort)->limit(5)->get();
         return view('index', ['prod'=>$prod]);
     }
     public function katal($name='id', $sort = 'desc')

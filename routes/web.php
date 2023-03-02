@@ -19,9 +19,11 @@ Route::get('/map', function () {return view('map');});
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/', [App\Http\Controllers\product::class, 'product']);
 
 Route::get('/katalog', [App\Http\Controllers\product::class, 'katal']);
+Route::get('/home', [App\Http\Controllers\Korzina::class, 'all_korzina']);
 Route::get('/info_tov{id} ', [App\Http\Controllers\product::class, 'podrob']);
+Route::get('/katalog{id} ', [App\Http\Controllers\Korzina::class, 'add']);

@@ -201,6 +201,11 @@ footer
     width: 300px;
     height: 300px;
 }
+.btn_buy a
+{
+    text-decoration: none;
+    color: black;
+}
  .card .btn_buy
 {
     background: rgba(0, 0, 255, 0.253);
@@ -246,4 +251,9 @@ footer
 .info_tovar div
 {
     text-align: center;
+}
+.info_tovar .img img
+{
+    width: 600px;
+    height: 600px;
 }

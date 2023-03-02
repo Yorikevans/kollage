@@ -13,8 +13,11 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    {{ __('You are logged in!') }}
+                        @foreach($prod as $obprod)
+                        <div class="card">
+                            <div class="id_prod">{{ $obprod->id_prod}}</div>
+                        </div>
+                        @endforeach
                 </div>
             </div>
         </div>

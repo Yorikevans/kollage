@@ -43,10 +43,3 @@ if(prev != null && next != null){
     });
 }
 
-// let btn_buy = document.querySelectorAll('.btn_buy');
-// for(let btn_all of btn_buy)
-// {
-//     btn_all.addEventListener('click', ()=>{
-//         location.href = "home";
-//     });
-// }
