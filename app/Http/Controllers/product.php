@@ -16,4 +16,9 @@ class product extends Controller
         $prod = \App\Models\product::orderby($name, $sort)->get();
         return view('katalog', ['prod'=>$prod]);
     }
+    public function podrob($id)
+    {
+        $prod = \App\Models\product::find($id);
+        return view('info_tov', ['prod'=>$prod]);
+    }
 }

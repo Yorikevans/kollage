@@ -10,9 +10,9 @@
                 <div class="title">{{ $obprod->name_tovar}}</div>
                 <div class="price">Цена: {{ $obprod->price}}</div>
                 @guest
-                <div class="btn_buy"><a href="home">Автоизируйтесь</a></div>
+                <a href="home">Авторизируйтесь</a>
                 @else
-                <div class="btn_buy">Купить</div>
+                <div class="btn_buy"><a href="info_tov {{ $obprod -> id }}">Купить</a></div>
                 @endif
             </div>
             @endforeach

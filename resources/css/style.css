@@ -1,3 +1,4 @@
+
 body
 {
     padding: 0;
@@ -195,7 +196,12 @@ footer
     opacity: 0;
     transition: all 0.8s;
 }
-.slider .tavars_cards .card .btn_buy
+.info_tovar .img img
+{
+    width: 300px;
+    height: 300px;
+}
+ .card .btn_buy
 {
     background: rgba(0, 0, 255, 0.253);
     border-bottom-right-radius: 50px;
@@ -208,7 +214,7 @@ footer
     cursor: pointer;
     z-index: 999;
 }
-.slider .tavars_cards .card .btn_buy:hover
+ .card .btn_buy:hover
 {
     background: rgba(0, 255, 51, 0.253);
     border-bottom-left-radius: 50px;
@@ -230,4 +236,14 @@ footer
 .katalog .item .card
 {
     margin-bottom: 50px;
+}
+.info_tovar
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.info_tovar div
+{
+    text-align: center;
 }

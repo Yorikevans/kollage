@@ -23,20 +23,6 @@
             </p>
         </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="../resources/js/script.js"></script>
 </body>
 </html>

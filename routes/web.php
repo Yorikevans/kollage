@@ -24,4 +24,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/', [App\Http\Controllers\product::class, 'product']);
 
 Route::get('/katalog', [App\Http\Controllers\product::class, 'katal']);
-
+Route::get('/info_tov{id} ', [App\Http\Controllers\product::class, 'podrob']);

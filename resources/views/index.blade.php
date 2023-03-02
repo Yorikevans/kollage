@@ -22,9 +22,13 @@
             @foreach($prod as $obprod)
             <div class="card">
                 <div class="img"><img src="{{ $obprod->image}}" alt="error"></div>
-                <div class="title">{{ $obprod->name_tovar}}</div>
+                <div class="title">{{ $obprod->name_tovar }}</div>
                 <div class="price">Цена: {{ $obprod->price}}</div>
+                @guest
+                <a href="home">Авторизируйтесь</a>
+                @else
                 <div class="btn_buy">Купить</div>
+                @endguest
             </div>
             @endforeach
         </div>
