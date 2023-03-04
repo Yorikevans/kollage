@@ -1,4 +1,5 @@
-<footer>
+<div class="footer_bottom">
+    <footer>
         <div class="logo"><img src="images/13hq.jpg" alt="error"></div>
         <div class="menu">
             <a href="" id="info_btn">О нас</a>
@@ -23,6 +24,7 @@
             </p>
         </div>
     </footer>
+</div>
     <script src="../resources/js/script.js"></script>
 </body>
 </html>

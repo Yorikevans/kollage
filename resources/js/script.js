@@ -43,3 +43,25 @@ if(prev != null && next != null){
     });
 }
 
+let new_add = document.querySelector('.new_add a');
+
+if(new_add != null)
+{
+    let i = false
+    new_add.addEventListener('click', ()=>{
+        
+        if(i == true)
+        {
+            document.querySelector('.form_add').style = "display: none";
+            new_add.textContent = "Добавить новый товар";
+            i = false;
+        }
+        else
+        {
+            document.querySelector('.form_add').style = "display: block";
+            new_add.textContent = "Отмена";
+            i = true;
+        }
+    });
+    
+}
