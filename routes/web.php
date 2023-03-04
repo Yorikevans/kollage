@@ -24,6 +24,7 @@ Auth::routes();
 Route::get('/', [App\Http\Controllers\product::class, 'product']);
 
 Route::get('/katalog', [App\Http\Controllers\product::class, 'katal']);
-Route::get('/home', [App\Http\Controllers\Korzina::class, 'all_korzina']);
+Route::get('/home', [App\Http\Controllers\Korzina::class, 'all_korzina'])->name('home');
 Route::get('/info_tov{id} ', [App\Http\Controllers\product::class, 'podrob']);
 Route::get('/katalog{id} ', [App\Http\Controllers\Korzina::class, 'add']);
+Route::get('/delete{id}', [App\Http\Controllers\Korzina::class, 'delete'])->name('delete');

@@ -18,16 +18,13 @@ class Korzina extends Controller
     public function all_korzina()
     {
         $id = Auth::user()->id;
-        $prod = \App\Models\korzina::where('id_user', $id)->get('id_prod');
+        $prod = \App\Models\korzina::where('id_user', $id)->get();
         return view('home', ['prod'=>$prod]);
     }
-    // public function delete($id)
-    // {
-    //     $prod = \App\Models\korzina::delete([
-    //         "id_prod"=>$id,
-    //         "id_user"=>Auth::user()->id
-    //     ]);
-    //     return redirect(route('home'));
-    // }
+    public function delete($id)
+    {
+        \App\Models\korzina::find($id)->delete();
+        return redirect(route('home'));
+    }
 
 }

@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="card-header">{{ __('Ваши товары') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -15,7 +15,11 @@
                     @endif
                         @foreach($prod as $obprod)
                         <div class="card">
-                            <div class="id_prod">{{ $obprod->id_prod}}</div>
+                            <div class="img"><img src="{{ $obprod->product->image}}" alt="error"></div>
+                            <div class="title">{{ $obprod->product->name_tovar}}</div>
+                            <div class="price">Цена: {{ $obprod->product->price}}</div>
+                            <div class="btn_buy"><a href="info_tov{{ $obprod -> id }}">Купить</a></div>
+                            <div class="delete_tov"><a href="{{route('delete', ['id' => $obprod -> id])}}">Удалить из корзины</a></div>
                         </div>
                         @endforeach
                 </div>

@@ -9,4 +9,9 @@ class korzina extends Model
 {
     use HasFactory;
     protected $fillable = ["id_prod", "id_user"];
+
+    public function product()
+    {
+        return $this->hasOne(product::class, 'id', 'id_prod');
+    }
 }
