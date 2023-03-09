@@ -1,15 +1,15 @@
 <div class="footer_bottom">
     <footer>
-        <div class="logo"><img src="images/13hq.jpg" alt="error"></div>
+        <div class="logo"><img src="{{asset('images/13hq.jpg')}}" alt="error"></div>
         <div class="menu">
-            <a href="" id="info_btn">О нас</a>
-            <a href="katalog">Каталог</a>
-            <a href="map">Где нас найти?</a>
+            <a href="{{asset('')}}" id="info_btn">О нас</a>
+            <a href="{{asset('katalog')}}">Каталог</a>
+            <a href="{{asset('map')}}">Где нас найти?</a>
             @guest
-                <a href="login">Вход</a>
-                <a href="register">Регистрация</a>
+                <a href="{{asset('login')}}">Вход</a>
+                <a href="{{asset('register')}}">Регистрация</a>
             @else
-                <a href="home">Профиль</a>
+                <a href="{{asset('home')}}">Профиль</a>
             @endguest
         </div>
         <div class="contacts">

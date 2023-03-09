@@ -1,0 +1,364 @@
+
+body
+{
+    padding: 0;
+    margin: 0;
+}
+.logo img
+{
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+header
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.menu
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-shadow: black 3px 3px 3px;
+    height: 40px;
+    padding-right: 400px;
+    align-items: center;
+}
+.menu a
+{
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(255, 200, 0);
+}
+.hka
+{
+    margin-top: 30px;
+    display: flex;flex-wrap: wrap;
+    justify-content: center;
+    font-size: 30px;
+    border-bottom: solid grey 2px;
+}
+.hka h2
+{
+    padding: 0;
+    margin: 0;
+}
+.info
+{
+    display: flex;flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 25px;
+}
+.card img
+{
+    width: 300px;
+}
+.card
+{
+    display: flex;flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+.item
+{
+    display: flex;flex-wrap: wrap;
+    justify-content: space-around;
+    transition: all 2s;
+}
+.item.active
+{
+    display: flex;
+    justify-content: space-around;
+    left: unset;
+    right: unset;
+    transition: all 2s;flex-wrap: wrap;
+}
+.carousel
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.btn_prev, .btn_next
+{
+    font-size: 50px;
+    position: absolute;
+    z-index: 9999;
+}
+.btn_next
+{
+    right: 0;
+}
+.map
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+footer a:hover
+{
+    color:rgb(156, 124, 7);
+}
+a:hover
+{
+    color:rgb(252, 220, 104)
+}
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+    border-top: 4px solid black;
+    box-shadow: -71px -3px 55px 2px black;
+}
+
+    footer .menu
+    {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 0;
+        height: unset;
+        margin: 0;
+        background: unset;
+    }
+    footer.logo
+    {
+     width: 300px;
+    }
+
+@media(width < 800px)
+{
+    .menu
+    {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 0;
+        height: unset;
+    }
+    .logo img
+    {
+        width: 200px;
+    }
+    .logo_info img
+    {
+        width: 300px;
+    }
+}
+.slider
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.slider .prev,
+.slider .next
+{
+    font-size: 40px;
+    background: rgba(15, 153, 15, 0.43);
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.slider .items
+{
+    z-index: 99999;
+}
+.slider .tavars_cards
+{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+}
+.slider .tavars_cards img
+{
+    width: 300px;
+    height: 300px;
+}
+.slider .tavars_cards .card
+{
+    position: absolute;
+    opacity: 0;
+    transition: all 0.8s;
+}
+.info_tovar .img img
+{
+    width: 300px;
+    height: 300px;
+}
+.btn_buy a
+{
+    text-decoration: none;
+    color: black;
+}
+ .card .btn_buy
+{
+    background: rgba(0, 0, 255, 0.253);
+    border-bottom-right-radius: 50px;
+    width: 100px;
+    display: flex;
+    transition: all 0.5s;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    cursor: pointer;
+    z-index: 999;
+}
+ .card .btn_buy:hover
+{
+    background: rgba(0, 255, 51, 0.253);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: unset;
+    transition: all 0.5s;
+
+}
+.katalog .item
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.katalog .item .card img
+{
+    width: 300px;
+    height: 300px;
+}
+.katalog .item .card
+{
+    margin-bottom: 50px;
+}
+.info_tovar
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.info_tovar div
+{
+    text-align: center;
+}
+.info_tovar .img img
+{
+    width: 600px;
+    height: 600px;
+}
+.card-header
+{
+    width: 100%;
+    text-align: center;
+}
+.new_add
+{
+    position: fixed;
+    bottom: 200px;
+    text-align: center;
+    width: 100%;
+    z-index: 99999;
+}
+.new_add a
+{
+    text-decoration: none;
+    color: aquamarine;
+    background: rgb(139, 104, 39);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 1s;
+}
+.new_add a:hover
+{
+    transition: all 1s;
+    text-decoration: none;
+    color: aquamarine;
+    background: rgb(39, 46, 139);
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.tavars_cards_admin 
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.tavars_cards_admin .tov_row
+{
+    display: flex;
+    justify-content: space-around;
+}
+.tavars_cards_admin .tov_row div
+{
+    width: 300px;
+    margin-top: 10px;
+}
+.delete_tov_bd a
+{
+    color: brown;
+}
+.form_add
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(30, 158, 109);
+}
+.form_add form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sort
+{
+    display: flex;
+    justify-content: space-around;
+    background: grey;
+    height: 60px;
+    align-items: center;
+    box-shadow: 2px 10px 12px grey;
+}
+.sort a
+{
+    text-decoration: none;
+    color: aqua;
+}
+.sort a:hover
+{
+    color: aquamarine;
+}
+.id_kat
+{
+    text-align: center;
+}
+.id_kat a
+{
+    padding-left: 200px;
+}
+.all_kate
+{
+    margin-top: 40px;
+}
